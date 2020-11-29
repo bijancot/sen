@@ -92,25 +92,23 @@
 				
 				$this->token_model->simpan($datatoken);
 			}
-			$subject = 'Verifikasi Akun LO KREATIF 2020';
+			$subject = 'Verifikasi Peserta SENCA 2020';
 			$message = '
-				Anda telah melakukan pendaftaran akun LO KREATIF 2020. Silakan lakukan verifikasi akun dengan klik tautan berikut ini:<br><br>
+				Halo, Selamat data di SENCA 2020. Team anda telah melakukan proses pendaftara, untuk melanjutkan silahkan verifikasi akun anda menggunakan tautan berikut ini:<br><br>
 				
 				<a href="'.base_url().'activate?email='.$email.'&token='.$token.'">Verifikasi Akun</a><br><br>
 				
-				Tautan akan valid selama 24 jam. Jika Anda merasa tidak melakukan pendaftaran LO KREATIF 2020, Anda dapat mengabaikan email ini.<br><br>
+				Tautan akan valid selama 24 jam. Jika Anda merasa tidak melakukan pendaftaran SENCA 2020, Anda dapat mengabaikan email ini.<br><br>
 				
 				Jika ada hal yang perlu ditanyakan lebih lanjut, silakan hubungi narahubung berikut:<br>
-				- Nana (087888895535)<br>
-				- Hendra (081350204469)<br>
-				- Azizah (085645548497)<br>
-				- Diyah (085755241098)<br><br>
+				- Bagus Kristomoyo (08113581650)<br>
+				- <br>
 				
 				Terima kasih. Semoga sukses. <br><br>
 				
 				Salam,<br>
-				Panitia LO KREATIF 2020<br>
-				<a href="http://aptisi7jatim.org/">www.aptisi7jatim.org</a><br>';
+				SENCA 2020<br>
+				<a href="https://senca.web.id/">senca.web.id</a><br>';
 				
 			$this->_sendEmail($token,$email,$subject, $message);
 		}
@@ -121,15 +119,15 @@
 			$config = [
 			'protocol' => 'smtp',
 			'smtp_host' => 'ssl://smtp.googlemail.com',
-			'smtp_user' => 'lokreatif7@gmail.com',
-			'smtp_pass' => 'paksugeng',
+			'smtp_user' => 'sencaevent@gmail.com',
+			'smtp_pass' => 'auto1234509876',
 			'smtp_port' => '465',
 			'mailtype' => 'html',
 			'charset' => 'utf-8',
 			'newline' => "\r\n"
 			];
 			$this->load->library('email',$config);
-			$this->email->from('lokreatif@gmail.com','Panitia LO KREATIF 2020');
+			$this->email->from('sencaevent@gmail.com','SENCA 2020 REGISTRATION');
 			$this->email->to($to);
 			
 			$this->email->subject($subject);
@@ -153,36 +151,23 @@
 					$this->peserta_model->activate($email);
 					$this->session->set_flashdata('message','<div class="alert alert-success" role="alert">Akun berhasil diaktifkan. Terima kasih.</div>');
 					
-					$subject = 'Pendaftaran LO KREATIF 2020 Berhasil';
+					$subject = 'SENCA 2020 REGISTRATION Has Been Success!';
 			$message = '
-				<p><strong>Selamat!</strong> Anda sudah berhasil terdaftar sebagai peserta Lomba Nasional Kreativitas Mahasiswa (LO KREATIF) 2020. </p>
+				<p><strong>Selamat!</strong> Anda sudah berhasil terdaftar sebagai peserta SENCA 2020. </p>
 
-<p>Selanjutnya Anda dapat melakukan login ke dashboard LO KREATIF 2020 dengan menggunakan email dan password yang didaftarkan ketika registrasi untuk melengkapi data tim dan dokumen lain.</p>
+<p>Selanjutnya Anda dapat melakukan login ke dashboard SENCA 2020 dengan menggunakan email dan password yang didaftarkan ketika registrasi untuk melengkapi data tim dan dokumen lain.</p>
 
-Di bawah ini adalah jadwal kegiatan LO KREATIF 2020:
-<ul>
-<li> Pendaftaran Peserta : 28 September - 31 Oktober 2020 </li>
-<li> Webinar Sosialisasi : 5 Oktober 2020 </li>
-<li> Seleksi Karya : 1 - 10 November 2020</li>
-<li> Pengumuman Finalis dan SEMNAS Seri 1: 12 November 2020</li>
-<li> Technical Meeting Finalis: 13 November 2020</li>
-<li> Pelaksanaan Final : 16 November 2020 </li>
-<li> Pengumuman Pemenang dan SEMNAS Seri 2: 18 November 2020</li>
-</ul>
 
 <p>Jika ada hal yang perlu ditanyakan lebih lanjut, silakan hubungi narahubung berikut:</p>
 <ul>
-<li>Nana (087888895535)</li>
-<li>Hendra (081350204469)</li>
-<li>Azizah (085645548497)</li>
-<li>Diyah (085755241098)</li>
+<li>Bagus (08113581650)</li>
 </ul>
 
-<p>Terima kasih. Selamat mengikuti Lomba Nasional Kreativitas Mahasiswa (LO KREATIF) 2020. Semoga sukses.</p>
+<p>Terima kasih. Selamat mengikuti SENCA 2020. Semoga sukses.</p>
 
 Salam,<br>
-Panitia LO KREATIF 2020<br>
-<a href="http://aptisi7jatim.org/">www.aptisi7jatim.org</a>';
+Panitia SENCA 2020<br>
+<a href="https://senca.web.id/">senca.web.id</a>';
 				
 			$this->_sendEmail($token,$email,$subject, $message);
 					

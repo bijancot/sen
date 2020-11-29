@@ -225,7 +225,7 @@ redirect("login/lupa_password");
 				
 				$this->token_model->simpan($datatoken);
 			}
-			$subject = 'Ganti Password Akun LO KREATIF 2020';
+			$subject = 'oops, ada yang lupa password nih - SENCA 2020';
 			$message = '
 				Silakan ganti password anda dengan klik tautan berikut ini:<br><br>
 				
@@ -237,8 +237,8 @@ redirect("login/lupa_password");
 				Terima kasih. Semoga sukses. <br><br>
 				
 				Salam,<br>
-				Panitia LO KREATIF 2020<br>
-				<a href="https://ssc.stiki.ac.id">http://aptisi7jatim.org</a><br>';
+				SENCA 2020<br>
+				<a href="https://senca.web.id">senca.web.id</a><br>';
 				
 			$this->_sendEmail($token,$email,$subject, $message);
 		}
@@ -249,15 +249,15 @@ redirect("login/lupa_password");
 			$config = [
 			'protocol' => 'smtp',
 			'smtp_host' => 'ssl://smtp.googlemail.com',
-			'smtp_user' => 'lokreatif7@gmail.com',
-			'smtp_pass' => 'paksugeng',
+			'smtp_user' => 'sencaevent@gmail.com',
+			'smtp_pass' => 'auto1234509876',
 			'smtp_port' => '465',
 			'mailtype' => 'html',
 			'charset' => 'utf-8',
 			'newline' => "\r\n"
 			];
 			$this->load->library('email',$config);
-			$this->email->from('lokreatif7@gmail.com','Panitia LO KREATIF 2020');
+			$this->email->from('sencaevent@gmail.com','SENCA 2020');
 			$this->email->to($to);
 			
 			$this->email->subject($subject);
