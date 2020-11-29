@@ -1,0 +1,6 @@
+.alert {
+    z-index: 1000;
+    /* top: 74px; */
+    width: 50%;
+    margin: 0 auto;
+}

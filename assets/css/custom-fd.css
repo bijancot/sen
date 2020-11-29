@@ -1,0 +1,52 @@
+.mt-4{
+    margin-top: 4rem !important;
+}
+
+.mt-0{
+    margin-top: 0 !important;
+}
+
+.mt-1{
+    margin-top: 1rem !important;
+}
+
+.mb-1{
+    margin-bottom: 1rem !important;
+}
+
+.mb-0{
+    margin-bottom: 0 !important;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #ced4da !important;
+}
+
+.prev-img{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.hidden{
+    display:none !important;
+}
+
+.alcs{
+    position: relative !important;
+    top: 5px !important;
+    right: 7px !important;
+    z-index: 1;
+}
+
+.btnn{
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    padding: 6px 12px !important;
+}
+.bdr-50{
+    border-radius: 50px !important;
+}
+.cap{
+    text-transform: capitalize !important;
+}
