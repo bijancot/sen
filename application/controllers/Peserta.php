@@ -33,15 +33,15 @@
 			
 			$peserta = $this->peserta_model->getByEmail($email);
 			$this->namatim = $peserta->namatim;
-			$this->idpt = $peserta->idpt;
-			$this->namalomba =$peserta->namalomba;
+			//$this->idpt = $peserta->idpt;
+			//$this->namalomba =$peserta->namalomba;
 			
 
 			if ($this->form_validation->run('bukti') == FALSE)
 			{
 				
 				//$data['pt'] = $this->pt_model->get_dropdown();
-				$data['lomba'] = $this->lomba_model->get_dropdown();
+				//$data['lomba'] = $this->lomba_model->get_dropdown();
 								
 
 				$data['peserta'] = $peserta;
@@ -81,8 +81,8 @@
 			// $email = $this->session->username;
 			$peserta = $this->peserta_model->get($id);
 			$this->namatim = $peserta->namatim;
-			$this->idpt = $peserta->idpt;
-			$this->namalomba =$peserta->namalomba;
+			//$this->idpt = $peserta->idpt;
+			//$this->namalomba =$peserta->namalomba;
 			
 			if ($this->form_validation->run('valid') == FALSE)
 			{
@@ -109,23 +109,23 @@
 		
 		public function cek_upload_bukti()
 		{
-			$namalomba = mb_ereg_replace("([^\w\s\d\-_~,;\[\]\(\).])", '', $this->namalomba);
-			$namalomba = mb_ereg_replace("([\.]{2,})", '', $namalomba);
+			//$namalomba = mb_ereg_replace("([^\w\s\d\-_~,;\[\]\(\).])", '', $this->namalomba);
+			//$namalomba = mb_ereg_replace("([\.]{2,})", '', $namalomba);
 
 			$namatim = mb_ereg_replace("([^\w\s\d\-_~,;\[\]\(\).])", '', $this->namatim);
 			$namatim = mb_ereg_replace("([\.]{2,})", '', $namatim);
 
-			$foldername = "berkas/{$namalomba}/{$namatim}({$this->idpt})/bukti";
-			if (!is_dir($foldername)) {
-				$old = umask(0000);
-				mkdir($foldername, 0777, true);
-				umask($old);
-			}
+			$foldername = "berkas/";
+			//if (!is_dir($foldername)) {
+			//	$old = umask(0000);
+			//	mkdir($foldername, 0777, true);
+			//	umask($old);
+			//}
 			$this->foldername = $foldername;
 			// echo is_writable($foldername)?'bisa':'tidak';
 			// die();
 			$config['upload_path']          = $foldername;
-			$config['allowed_types']        = 'jpg|png';
+			$config['allowed_types']        = 'pdf';
 			$config['max_size']             = 2048;
 			$config['max_width']            = 1500;
 			$config['max_height']           = 1500;
@@ -133,7 +133,7 @@
 
 			$path = $_FILES['bukti']['name'];
 			$ext = pathinfo($path, PATHINFO_EXTENSION);
-			$config['file_name']			= "bukti_{$this->namatim}.{$ext}";						
+			$config['file_name']			= "cv_{$this->namatim}.{$ext}";						
 
 			$this->load->library('upload', $config);
 			$this->upload->initialize($config);

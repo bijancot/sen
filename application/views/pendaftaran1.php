@@ -16,12 +16,39 @@
                         
 <?php
 		
+    $alasan = array(
+        'name'        => 'alasan',
+        'id'          => 'alasan',
+        'value'       => set_value('alasan'),
+        'rows'        => '50',
+        'cols'        => '10',
+        'style'       => 'width:50%',
+        'class'       => 'form-control'
+    );
+
+    $idebisnis = array(
+        'name'        => 'idebisnis',
+        'id'          => 'idebisnis',
+        'value'       => set_value('idebisnis'),
+        'rows'        => '50',
+        'cols'        => '10',
+        'style'       => 'width:50%',
+        'class'       => 'form-control'
+    );
     echo form_open("pendaftaran");
-    echo form_input('namatim',set_value('namatim'),'','Nama Tim',form_error('namatim'));
-		echo form_input('email',set_value('email'),'','Email Ketua Tim',form_error('email'));
+    echo form_input('namatim',set_value('namatim'),'','Nama Start-up kamu (contoh : samsan-tech)',form_error('namatim'));
+		echo form_input('email',set_value('email'),'','Email Kamu',form_error('email'));
 		echo form_password('password',set_value('password'),'','Password',form_error('password'));
-		echo form_input('nohp',set_value('nohp'),'','No Handphone Ketua Tim',form_error('nohp'));
-		
+		echo form_input('nohp',set_value('nohp'),'','No Handphone',form_error('nohp'));
+		//echo form_textarea($alasan);
+		echo "<div class=\"form-group\"><label for=\"alasan\" class=\"font-weight-bold\">Ceritakan Alasan kamu ikut SENCA 2020</label>";
+		echo form_textarea('alasan',set_value('alasan'),'','Ceritakan Alasan kamu ikut SENCA 2020',form_error('alasan'));
+		echo "</div>";
+		echo "<div class=\"form-group\"><label for=\"idebisnis\" class=\"font-weight-bold\">Kasih Tau Ide Bisnis Kamu dong! (MAX 1000 kata)</label>";
+                echo form_textarea('alasan',set_value('alasan'),'','Kasih Tau Ide Bisnis Kamu dong!',form_error('alasan'));
+                echo "</div>";
+		//echo form_textarea('alasan',set_value('alasan'),'','Ceritakan Alasan kamu ikut SENCA 2020',form_error('alasan'));	
+		//echo form_textarea('idebisnis',set_value('idebisnis'),'','Kasih Tau Ide Bisnis Kamu dong!',form_error('idebisnis')) </br>;
 		//echo form_dropdown('idpt', $pt,set_value('idpt'),'required="required"','Nama Perguruan Tinggi',form_error('idpt'));
 		//echo form_dropdown('idlomba', $lomba,set_value('idlomba'),'required="required"','Kategori Lomba',form_error('idlomba'));
    

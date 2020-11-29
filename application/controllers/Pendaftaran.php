@@ -40,8 +40,10 @@
 				'namatim' => htmlspecialchars($this->input->post('namatim',true)),
 				'email'=> $email,
 				'nohp'=> htmlspecialchars($this->input->post('nohp')),
-				'idpt'=> htmlspecialchars($this->input->post('idpt')),
-				'idlomba'=> htmlspecialchars($this->input->post('idlomba')),
+				//'idpt'=> htmlspecialchars($this->input->post('idpt')),
+				//'idlomba'=> htmlspecialchars($this->input->post('idlomba')),
+				'alasan' => htmlspecialchars($this->input->post('alasan')),
+				'idebisnis' => htmlspecialchars($this->input->post('idebisnis')),
 				'password'=> password_hash($this->input->post('password'),PASSWORD_DEFAULT),
 				'status'=> 0,
 				];

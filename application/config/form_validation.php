@@ -24,16 +24,16 @@ $config = array('pendaftaran' =>
             'label' => 'No Handphone',
             'rules' => 'required',
 						'errors' => ['required' => '%s harus diisi.']],
+['field' => 'alasan',
+            'label' => 'alasan kamu',
+            'rules' => 'required',
+                                                'errors' => ['required' => '%s harus diisi.']],
 
-            ['field' => 'idpt',
-            'label' => 'Perguruan Tinggi',
-            'rules' => 'required|callback_cek_dropdown',
-            'errors' => ['required' => '%s harus diisi.']],
+['field' => 'idebisnis',
+            'label' => 'ide bisnis',
+            'rules' => 'required',
+                                                'errors' => ['required' => '%s harus diisi.']]
 
-            ['field' => 'idlomba',
-            'label' => 'Kategori Lomba',
-            'rules' => 'required|callback_cek_dropdown',
-						'errors' => ['required' => '%s harus diisi.']]
         ],
 				'kategori1' => 
 					[	
@@ -145,52 +145,6 @@ $config = array('pendaftaran' =>
             'label' => 'Nama Ketua',
             'rules' => 'required',
 						'errors' => ['required' => '%s harus diisi.']],
-						
-						['field' => 'anggota2',
-            'label' => 'Nama Anggota 2',
-            'rules' => 'required',
-						'errors' => ['required' => '%s harus diisi.']],
-
-            ['field' => 'email2',
-            'label' => 'Email Anggota 2',
-            'rules' => 'required|valid_email',
-						'errors' => ['required' => '%s harus diisi.',
-						'valid_email' => '%s harus diisi dengan benar.']],
-
-            ['field' => 'nohp2',
-            'label' => 'No HP Anggota 2',
-            'rules' => 'required',
-						'errors' => ['required' => '%s harus diisi.']],
-						
-						['field' => 'anggota3',
-            'label' => 'Nama Anggota 3',
-            'rules' => 'required',
-						'errors' => ['required' => '%s harus diisi.']],
-
-            ['field' => 'email3',
-            'label' => 'Email Anggota 3',
-            'rules' => 'required|valid_email',
-						'errors' => ['required' => '%s harus diisi.',
-						'valid_email' => '%s harus diisi dengan benar.']],
-
-            ['field' => 'nohp3',
-            'label' => 'No HP Anggota 3',
-            'rules' => 'required',
-						'errors' => ['required' => '%s harus diisi.']],
-						
-						['field' => 'nidn',
-            'label' => 'NIDN Pembimbing',
-            'rules' => 'required',
-						'errors' => ['required' => '%s harus diisi.']],
-
-            ['field' => 'pembimbing',
-            'label' => 'Nama Dosen Pembimbing',
-            'rules' => 'required',
-						'errors' => ['required' => '%s harus diisi.']],
-
-            ['field' => 'ktm',
-            'label' => 'Dokumen KTM',
-            'rules' => 'callback_cek_upload_ktm'],
           ],  
         
 				'login' => 
