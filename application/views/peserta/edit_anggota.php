@@ -2,7 +2,7 @@
 	<div class="card-header bg-warning py-3">
 		<h6 class="m-0 font-weight-bold text-primary">Data Anggota</h6>
 		<small class="form-text text-muted">
-      		Gunakan halaman  ini untuk mengisi data anggota dan pembimbing.
+      		Gunakan halaman  ini untuk mengisi data anggota team.
     	</small>
 	</div>
     <div class="card-body">
@@ -36,14 +36,14 @@
 	echo form_email('email5',set_value('email5',$anggota->email5),'','Email Anggota 5',form_error('email5'));
 	echo form_input('nohp5',set_value('nohp5',$anggota->nohp5),'','No HP Anggota 5',form_error('nohp5'))."</div>";
 
-	echo form_input('instagram',set_value('instagram',$anggota->instagram),'','Nama instagram',form_error('instagram'));
+	//echo form_input('instagram',set_value('instagram',$anggota->instagram),'','Nama instagram',form_error('instagram'));
 	
-	echo form_hidden('ktm_',set_value('ktm_',$anggota->ktm, FALSE));
-	echo form_upload('ktm','','','KTM',form_error('ktm'),"Kumpulan semua KTM anggota termasuk ketua tim dalam bentuk <strong class=\"text-danger\">file pdf</strong>, dengan ukuran maksimal 500kb.  Nama file dapat dikosongi jika pernah mengunggahnya");
-	echo '<p><i class="fas fa-file-alt"></i>&nbsp;&nbsp;&nbsp;'.basename($anggota->ktm).'</p>';
+	//echo form_hidden('ktm_',set_value('ktm_',$anggota->ktm, FALSE));
+	//echo form_upload('ktm','','','KTM',form_error('ktm'),"Kumpulan semua KTM anggota termasuk ketua tim dalam bentuk <strong class=\"text-danger\">file pdf</strong>, dengan ukuran maksimal 500kb.  Nama file dapat dikosongi jika pernah mengunggahnya");
+	//echo '<p><i class="fas fa-file-alt"></i>&nbsp;&nbsp;&nbsp;'.basename($anggota->ktm).'</p>';
 
-	echo form_input('pembimbing',set_value('pembimbing',$anggota->pembimbing),'','Nama Pembimbing',form_error('pembimbing'));		
-	echo form_input('nidn',set_value('nidn',$anggota->nidn),'','NIDN',form_error('nidn'));		
+	//echo form_input('pembimbing',set_value('pembimbing',$anggota->pembimbing),'','Nama Pembimbing',form_error('pembimbing'));		
+	//echo form_input('nidn',set_value('nidn',$anggota->nidn),'','NIDN',form_error('nidn'));		
 	?>			
 			</div>
 		</div>

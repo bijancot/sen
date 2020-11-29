@@ -20,13 +20,13 @@
 
 		
 
-		<title>LO KREATIF Dashboard</title>
+		<title>SENCA Dashboard</title>
 
 		
 
 		<!-- Custom fonts for this template-->
 
-		<link rel="icon" href="<?=base_url();?>assets/favicon.ico">
+		<link rel="icon" href="https://senca.web.id/wp-content/uploads/2020/11/cropped-senca-512px-192x192.png">
 		<link href="<?=base_url();?>assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
 		<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -93,17 +93,17 @@
 
 				<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
 
-					<div class="sidebar-brand-icon rotate-n-15">
+					<div class="sidebar-brand-icon">
 
 						
 
-						<img src="<?=base_url();?>assets/logolo.svg" width="40" height="40" alt="">
+						<img src="https://senca.web.id/wp-content/uploads/2020/11/cropped-senca-512px-192x192.png" width="40" height="40" alt="">
 
 						
 
 					</div>
 
-					<div class="sidebar-brand-text mx-3">LO KREATIF</div>
+					<div class="sidebar-brand-text mx-3">SENCA</div>
 
 				</a>
 

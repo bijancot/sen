@@ -8,7 +8,7 @@
             
     <h6 class="m-0 font-weight-bold text-primary">Data Peserta</h6>
     <small class="form-text text-muted">
-      Gunakan halaman  ini untuk mengubah password atau identitas tim, serta dapat dipakai untuk unggah <strong>syarat adminstrasi</strong>.
+      Gunakan halaman  ini untuk mengubah password atau identitas tim.
     </small>
   </div>
 

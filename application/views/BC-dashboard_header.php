@@ -106,7 +106,7 @@
 
 						
 
-						<img src="<?=base_url();?>assets/logolo.svg" width="40" height="40" alt="">
+						<img src="https://senca.web.id/wp-content/uploads/elementor/thumbs/senca_fullname-oyzfj0jvjaher4qxub17kjld6tpiqjzy1k4pf55rqq.png" width="40" height="40" alt="">
 
 						
 

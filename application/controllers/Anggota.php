@@ -26,8 +26,8 @@
 			
 			if($peserta = $this->peserta_model->get($id)){
 				$this->namatim = $peserta->namatim;
-				$this->idpt = $peserta->idpt;
-				$this->namalomba =$peserta->namalomba;
+				//$this->idpt = $peserta->idpt;
+				//$this->namalomba =$peserta->namalomba;
 
 				$data['peserta'] = $peserta;
 				if($data['anggota'] = $this->anggota_model->get($peserta->id)){
@@ -56,8 +56,8 @@
 				$email = $this->session->username;
 				$peserta = $this->peserta_model->getByEmail($email);
 				$this->namatim = $peserta->namatim;
-				$this->idpt = $peserta->idpt;
-				$this->namalomba =$peserta->namalomba;
+				//$this->idpt = $peserta->idpt;
+				//$this->namalomba =$peserta->namalomba;
 				
 			}
 			
@@ -93,9 +93,9 @@
 				'email5'=> htmlspecialchars($this->input->post('email5',true)),
 				'nohp5'=> htmlspecialchars($this->input->post('nohp5',true)),
 				
-				'nidn' => htmlspecialchars($this->input->post('nidn',true)),
-				'pembimbing'=> htmlspecialchars($this->input->post('pembimbing',true)),
-				'instagram'=>htmlspecialchars($this->input->post('instagram', true)),
+				//'nidn' => htmlspecialchars($this->input->post('nidn',true)),
+				//'pembimbing'=> htmlspecialchars($this->input->post('pembimbing',true)),
+				//'instagram'=>htmlspecialchars($this->input->post('instagram', true)),
 				
 				];
 				
@@ -122,8 +122,8 @@
 			$peserta = $this->peserta_model->getByEmail($email);
 			
 			$this->namatim = $peserta->namatim;
-			$this->idpt = $peserta->idpt;
-			$this->namalomba =$peserta->namalomba;
+			//$this->idpt = $peserta->idpt;
+			//$this->namalomba =$peserta->namalomba;
 
 			$data['peserta'] = $peserta;
 			
@@ -156,10 +156,10 @@
 				'email5'=> htmlspecialchars($this->input->post('email4',true)),
 				'nohp5'=> htmlspecialchars($this->input->post('nohp4',true)),
 				
-				'nidn' => htmlspecialchars($this->input->post('nidn',true)),
-				'pembimbing'=> htmlspecialchars($this->input->post('pembimbing',true)),
-				'ktm'=>  $this->foldername."/".$this->upload->data('file_name'),
-				'instagram'=>htmlspecialchars($this->input->post('instagram', true)),
+				//'nidn' => htmlspecialchars($this->input->post('nidn',true)),
+				//'pembimbing'=> htmlspecialchars($this->input->post('pembimbing',true)),
+				//'ktm'=>  $this->foldername."/".$this->upload->data('file_name'),
+				//'instagram'=>htmlspecialchars($this->input->post('instagram', true)),
 				
 				];
  				
@@ -169,44 +169,6 @@
 			} 			
 		}
 		
-		public function cek_upload_ktm()
-		{
-			$namalomba = mb_ereg_replace("([^\w\s\d\-_~,;\[\]\(\).])", '', $this->namalomba);
-			$namalomba = mb_ereg_replace("([\.]{2,})", '', $namalomba);
-
-			$namatim = mb_ereg_replace("([^\w\s\d\-_~,;\[\]\(\).])", '', $this->namatim);
-			$namatim = mb_ereg_replace("([\.]{2,})", '', $namatim);
-
-			$foldername = "berkas/{$namalomba}/{$this->namatim}({$this->idpt})/ktm";
-			if (!is_dir($foldername)) {
-				mkdir($foldername, 0777, true);
-			}
-			$this->foldername = $foldername;
-
-			$config['upload_path']          = $foldername;
-			$config['allowed_types']        = 'pdf';
-			$config['max_size']             = 500;
-			$config['overwrite']			= true;
-
-			$path = $_FILES['ktm']['name'];
-			$ext = pathinfo($path, PATHINFO_EXTENSION);
-			$config['file_name']			= "ktm_{$this->namatim}.$ext";
-			$this->load->library('upload', $config);
-			if (!$path && $this->input->post('ktm_')){ 
-				return TRUE;
-			}
-			
-			if ( ! $this->upload->do_upload('ktm'))
-			{   
-				$this->form_validation->set_message('cek_upload_ktm', 
-														 $this->upload->display_errors());
-
-				return FALSE;
-			}
-			else
-			{
-				return TRUE;
-			}
-		}
+		
 	}
 		

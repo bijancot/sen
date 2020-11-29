@@ -18,10 +18,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Template Mo">
-		<link rel="icon" href="<?=base_url();?>assets/favicon.ico">
+		<link rel="icon" href="https://senca.web.id/wp-content/uploads/2020/11/cropped-senca-512px-32x32.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 		
-    <title>LO KREATIF</title>
+    <title>Registrasi SENCA 2020</title>
 		<!--
 			
 			ART FACTORY

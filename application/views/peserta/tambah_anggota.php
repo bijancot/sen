@@ -17,7 +17,7 @@
 		
 
     echo form_open_multipart("");
-		echo form_hidden('kategori',$peserta->namalomba);
+		//echo form_hidden('kategori',$peserta->namalomba);
 
     echo form_input('namaketua',set_value('namaketua'),'','Nama Ketua',form_error('namaketua'));
 
@@ -57,12 +57,12 @@
 
 		echo form_input('instagram',set_value('instagram'),'','Nama instagram',form_error('instagram'));
 
-		echo form_upload('ktm','','','KTM',form_error('ktm'),"File PDF yang berisi kumpulan semua KTM anggota termasuk ketua tim dalam bentuk file pdf, dengan ukuran maksimal 500kb");
+		//echo form_upload('ktm','','','KTM',form_error('ktm'),"File PDF yang berisi kumpulan semua KTM anggota termasuk ketua tim dalam bentuk file pdf, dengan ukuran maksimal 500kb");
 		
 
-		echo form_input('pembimbing',set_value('pembimbing'),'','Nama Pembimbing',form_error('pembimbing'));		
+		//echo form_input('pembimbing',set_value('pembimbing'),'','Nama Pembimbing',form_error('pembimbing'));		
 
-		echo form_input('nidn',set_value('nidn'),'','NIDN',form_error('nidn'));
+		//echo form_input('nidn',set_value('nidn'),'','NIDN',form_error('nidn'));
 
 
 

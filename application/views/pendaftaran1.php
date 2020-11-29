@@ -45,7 +45,7 @@
 		echo form_textarea('alasan',set_value('alasan'),'','Ceritakan Alasan kamu ikut SENCA 2020',form_error('alasan'));
 		echo "</div>";
 		echo "<div class=\"form-group\"><label for=\"idebisnis\" class=\"font-weight-bold\">Kasih Tau Ide Bisnis Kamu dong! (MAX 1000 kata)</label>";
-                echo form_textarea('alasan',set_value('alasan'),'','Kasih Tau Ide Bisnis Kamu dong!',form_error('alasan'));
+                echo form_textarea('idebisnis',set_value('idebisnis'),'','Kasih Tau Ide Bisnis Kamu dong!',form_error('idebisnis'));
                 echo "</div>";
 		//echo form_textarea('alasan',set_value('alasan'),'','Ceritakan Alasan kamu ikut SENCA 2020',form_error('alasan'));	
 		//echo form_textarea('idebisnis',set_value('idebisnis'),'','Kasih Tau Ide Bisnis Kamu dong!',form_error('idebisnis')) </br>;
