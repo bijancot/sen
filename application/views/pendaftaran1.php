@@ -16,25 +16,7 @@
                         
 <?php
 		
-    $alasan = array(
-        'name'        => 'alasan',
-        'id'          => 'alasan',
-        'value'       => set_value('alasan'),
-        'rows'        => '50',
-        'cols'        => '10',
-        'style'       => 'width:50%',
-        'class'       => 'form-control'
-    );
 
-    $idebisnis = array(
-        'name'        => 'idebisnis',
-        'id'          => 'idebisnis',
-        'value'       => set_value('idebisnis'),
-        'rows'        => '50',
-        'cols'        => '10',
-        'style'       => 'width:50%',
-        'class'       => 'form-control'
-    );
     echo form_open("pendaftaran");
     echo form_input('namatim',set_value('namatim'),'','Nama Start-up kamu (contoh : samsan-tech)',form_error('namatim'));
 		echo form_input('email',set_value('email'),'','Email Kamu',form_error('email'));

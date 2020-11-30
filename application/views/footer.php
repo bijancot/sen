@@ -10,7 +10,7 @@
 
                 <div class="col-lg-7 col-md-12 col-sm-12">
 
-                    <p class="copyright">Copyright © LO KREATIF 2020. All Rights Reserved. 
+                    <p class="copyright">Copyright © SENCA 2020. All Rights Reserved. 
 
                 
 
@@ -18,17 +18,7 @@
 
                 <div class="col-lg-5 col-md-12 col-sm-12">
 
-                    <ul class="social">
 
-                        <li><a href="https://www.facebook.com/LO-Kreatif-2020-105985964590813"><i class="fa fa-facebook"></i></a></li>
-
-                        <li><a href="https://twitter.com/lokreatif2020"><i class="fa fa-twitter"></i></a></li>
-
-                        <li><a href="https://www.instagram.com/lokreatif2020/"><i class="fa fa-instagram"></i></a></li>
-
-                        <li><a href="https://www.youtube.com/channel/UCzqR0-UpePk13OEuV1lKucA"><i class="fa fa-youtube"></i></a></li>
-
-                    </ul>
 
                 </div>
 
